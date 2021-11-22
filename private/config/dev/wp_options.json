@@ -1,5 +1,5 @@
 {
-    "active_plugins": "a:1:{i:0;s:17:\"wp-cfm\/wp-cfm.php\";}",
+    "active_plugins": "a:3:{i:0;s:30:\"advanced-custom-fields\/acf.php\";i:1;s:23:\"gutenberg\/gutenberg.php\";i:2;s:17:\"wp-cfm\/wp-cfm.php\";}",
     "admin_email": "jeremy.dickens@pantheon.io",
     "admin_email_lifespan": "1652723647",
     "auto_plugin_theme_update_emails": "a:0:{}",
