@@ -1,0 +1,33 @@
+{
+	"apiVersion": 2,
+	"name": "core/post-comments-form",
+	"title": "Post Comments Form",
+	"category": "theme",
+	"description": "Display a post's comments form.",
+	"textdomain": "default",
+	"attributes": {
+		"textAlign": {
+			"type": "string"
+		}
+	},
+	"usesContext": [ "postId", "postType" ],
+	"supports": {
+		"html": false,
+		"color": {
+			"gradients": true,
+			"link": true
+		},
+		"typography": {
+			"fontSize": true,
+			"lineHeight": true,
+			"__experimentalFontStyle": true,
+			"__experimentalFontWeight": true,
+			"__experimentalLetterSpacing": true,
+			"__experimentalTextTransform": true,
+			"__experimentalDefaultControls": {
+				"fontSize": true
+			}
+		}
+	},
+	"style": [ "wp-block-post-comments-form", "wp-block-buttons", "wp-block-button" ]
+}
