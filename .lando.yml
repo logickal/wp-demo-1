@@ -1,0 +1,6 @@
+name: jdd-demo-wp-1
+recipe: pantheon
+config:
+  framework: wordpress
+  site: jdd-demo-wp-1
+  id: 88513133-69ac-42dd-baf6-a53686509786
