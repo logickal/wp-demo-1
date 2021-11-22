@@ -1,0 +1,9 @@
+{
+    "tax\/category": "[{\"term_id\":1,\"name\":\"Uncategorized\",\"slug\":\"uncategorized\",\"description\":\"\",\"parent\":0}]",
+    "tax\/post_tag": "[]",
+    "tax\/nav_menu": "[]",
+    "tax\/link_category": "[]",
+    "tax\/post_format": "[]",
+    "tax\/wp_theme": "[]",
+    ".label": "Taxonomy Terms"
+}
