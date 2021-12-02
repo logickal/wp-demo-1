@@ -1,9 +1,9 @@
 {
     "tax\/category": "[{\"term_id\":1,\"name\":\"Uncategorized\",\"slug\":\"uncategorized\",\"description\":\"\",\"parent\":0}]",
-    "tax\/post_tag": "[]",
+    "tax\/post_tag": "[{\"term_id\":5,\"name\":\"garden\",\"slug\":\"garden\",\"description\":\"\",\"parent\":0},{\"term_id\":4,\"name\":\"idle\",\"slug\":\"idle\",\"description\":\"\",\"parent\":0},{\"term_id\":3,\"name\":\"waiting\",\"slug\":\"waiting\",\"description\":\"\",\"parent\":0},{\"term_id\":6,\"name\":\"walrus\",\"slug\":\"walrus\",\"description\":\"\",\"parent\":0}]",
     "tax\/nav_menu": "[]",
     "tax\/link_category": "[]",
     "tax\/post_format": "[]",
-    "tax\/wp_theme": "[]",
+    "tax\/wp_theme": "[{\"term_id\":2,\"name\":\"twentytwentyone\",\"slug\":\"twentytwentyone\",\"description\":\"\",\"parent\":0},{\"term_id\":7,\"name\":\"twentytwentyone-child\",\"slug\":\"twentytwentyone-child\",\"description\":\"\",\"parent\":0}]",
     ".label": "Taxonomy Terms"
 }
