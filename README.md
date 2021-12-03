@@ -31,3 +31,4 @@ If you would like to keep a separate set of configuration for local development,
 ![alt](http://i.imgur.com/fzIeQBP.png, '')
 
 Testing string 1
+Testing string 2
