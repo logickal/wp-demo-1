@@ -1,5 +1,5 @@
 {
-    "active_plugins": "a:8:{i:0;s:30:\"advanced-custom-fields\/acf.php\";i:1;s:47:\"change-wp-admin-login\/change-wp-admin-login.php\";i:2;s:23:\"gutenberg\/gutenberg.php\";i:3;s:29:\"health-check\/health-check.php\";i:4;s:19:\"jetpack\/jetpack.php\";i:5;s:32:\"login-lockdown\/loginlockdown.php\";i:6;s:27:\"redirection\/redirection.php\";i:7;s:17:\"wp-cfm\/wp-cfm.php\";}",
+    "active_plugins": "a:7:{i:0;s:30:\"advanced-custom-fields\/acf.php\";i:1;s:47:\"change-wp-admin-login\/change-wp-admin-login.php\";i:2;s:23:\"gutenberg\/gutenberg.php\";i:3;s:29:\"health-check\/health-check.php\";i:5;s:32:\"login-lockdown\/loginlockdown.php\";i:6;s:27:\"redirection\/redirection.php\";i:7;s:17:\"wp-cfm\/wp-cfm.php\";}",
     "admin_email": "jeremy.dickens@pantheon.io",
     "admin_email_lifespan": "1652723647",
     "auto_plugin_theme_update_emails": "a:0:{}",
@@ -66,7 +66,7 @@
     "ping_sites": "http:\/\/rpc.pingomatic.com\/",
     "posts_per_page": "10",
     "posts_per_rss": "10",
-    "recently_activated": "a:0:{}",
+    "recently_activated": "a:1:{s:19:\"jetpack\/jetpack.php\";i:1638544449;}",
     "recently_edited": "",
     "recovery_keys": "a:0:{}",
     "require_name_email": "1",
