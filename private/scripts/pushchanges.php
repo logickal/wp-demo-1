@@ -47,14 +47,14 @@ $workbranch = "recommit-work";
     // we can make a branch off of the commit this multidev was built from.
     print "git rev-parse HEAD\n";
     $remoteHead = exec("git -C $canonicalRepository rev-parse HEAD");
-    if ($remoteHead != $fromSha) {
-        // TODO: If we had git 2.11.0, we could use --shallow-since with the date
-        // from $buildMetadata['commit-date'] to get exactly the commits we need.
-        // Until then, though, we will just `unshallow` the whole branch if there
-        // is a conflicting commit.
-        print "git fetch --unshallow\n";
-        passthru("git -C $canonicalRepository fetch --unshallow 2>&1");
-    }
+//    if ($remoteHead != $fromSha) {
+//        // TODO: If we had git 2.11.0, we could use --shallow-since with the date
+//        // from $buildMetadata['commit-date'] to get exactly the commits we need.
+//        // Until then, though, we will just `unshallow` the whole branch if there
+//        // is a conflicting commit.
+//        print "git fetch --unshallow\n";
+//        passthru("git -C $canonicalRepository fetch --unshallow 2>&1");
+//    }
 
     // Get metadata from the commit at the HEAD of the full repository
     $comment = escapeshellarg(exec("git -C $fullRepository log -1 --pretty=\"%s\""));
@@ -75,15 +75,15 @@ $workbranch = "recommit-work";
     $createNewBranchReason = '';
     if ($branch == 'master') {
         $createNewBranchReason = "the $branch branch cannot be pushed to directly";
-    } elseif ($remoteHead != $fromSha) {
-        $createNewBranchReason = "new conflicting commits (e.g. $remoteHead) were added to the upstream repository";
     }
+//    elseif ($remoteHead != $fromSha) {
+//        $createNewBranchReason = "new conflicting commits (e.g. $remoteHead) were added to the upstream repository";
+//    }
     if (!empty($createNewBranchReason)) {
         // Warn that a new branch is being created.
         $targetBranch = substr($commitToSubmit, 0, 5) . $branch;
-        print "Creating a new branch, '$targetBranch', because $createNewBranchReason.\n";
-        print "git checkout -B $targetBranch $fromSha\n";
-        passthru("git -C $canonicalRepository checkout -B $targetBranch $fromSha 2>&1");
+        print "git checkout -B $targetBranch";
+        passthru("git -C $canonicalRepository checkout -B $targetBranch 2>&1");
     }
 
         // Now for some git magic.
@@ -101,10 +101,10 @@ $workbranch = "recommit-work";
     //   of the canonical repository via the --git-dir and -C flags.
     // - We restore the .gitignore at the end via `git checkout -- .gitignore`.
 
-    $gitignore_contents = file_get_contents("$canonicalRepository/.gitignore");
-    file_put_contents("$fullRepository/.gitignore", $gitignore_contents);
+    //$gitignore_contents = file_get_contents("$canonicalRepository/.gitignore");
+    //file_put_contents("$fullRepository/.gitignore", $gitignore_contents);
 
-    print "::::::::::::::::: .gitignore :::::::::::::::::\n$gitignore_contents\n";
+    //print "::::::::::::::::: .gitignore :::::::::::::::::\n$gitignore_contents\n";
 
     // Add our files and make our commit
     print "git add .\n";
