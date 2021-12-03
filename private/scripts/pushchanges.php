@@ -123,7 +123,7 @@ $workbranch = "recommit-work";
     // Make sure that HEAD changed after 'git apply'
     $appliedCommit = exec("git -C $canonicalRepository rev-parse HEAD");
 
-       // Seatbelts: this generally should not happen. If it does, we will presume
+    // Seatbelts: this generally should not happen. If it does, we will presume
     // it is not an error; this situation might arise if someone commits only
     // changes to build result files from dashboard.
     if ($appliedCommit == $remoteHead) {

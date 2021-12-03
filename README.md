@@ -32,3 +32,4 @@ If you would like to keep a separate set of configuration for local development,
 
 Testing string 1
 Testing string 2
+and a three.
