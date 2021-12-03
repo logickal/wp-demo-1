@@ -49,3 +49,25 @@ function load_build_metadata($fullRepository) {
 
     return $buildMetadata;
 }
+
+
+/**
+ * Function to report an error on the Pantheon dashboard
+ *
+ * Not supported; may stop working at any point in the future.
+ */
+function pantheon_raise_dashboard_error($reason = 'Uknown failure', $extended = FALSE) {
+    // Make creative use of the error reporting API
+    $data = array('file'=>'Push Changes script',
+        'line'=>'Error',
+        'type'=>'error',
+        'message'=>$reason);
+    $params = http_build_query($data);
+    $result = pantheon_curl('https://api.live.getpantheon.com/sites/self/environments/self/events?'. $params, NULL, 8443, 'POST');
+    error_log("Push Changes Integration failed - $reason");
+    // Dump additional debug info into the error log
+    if ($extended) {
+        error_log(print_r($extended, 1));
+    }
+    die("Push Changes failed - $reason");
+}
