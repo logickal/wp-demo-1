@@ -1,5 +1,5 @@
 {
-    "active_plugins": "a:3:{i:0;s:30:\"advanced-custom-fields\/acf.php\";i:1;s:23:\"gutenberg\/gutenberg.php\";i:2;s:17:\"wp-cfm\/wp-cfm.php\";}",
+    "active_plugins": "a:8:{i:0;s:30:\"advanced-custom-fields\/acf.php\";i:1;s:47:\"change-wp-admin-login\/change-wp-admin-login.php\";i:2;s:23:\"gutenberg\/gutenberg.php\";i:3;s:29:\"health-check\/health-check.php\";i:4;s:19:\"jetpack\/jetpack.php\";i:5;s:32:\"login-lockdown\/loginlockdown.php\";i:6;s:27:\"redirection\/redirection.php\";i:7;s:17:\"wp-cfm\/wp-cfm.php\";}",
     "admin_email": "jeremy.dickens@pantheon.io",
     "admin_email_lifespan": "1652723647",
     "auto_plugin_theme_update_emails": "a:0:{}",
@@ -89,7 +89,7 @@
     "thumbnail_size_w": "150",
     "time_format": "g:i a",
     "timezone_string": "",
-    "uninstall_plugins": "a:0:{}",
+    "uninstall_plugins": "a:2:{s:62:\"change-wp-admin-login\/includes\/class-change-wp-admin-login.php\";a:2:{i:0;s:21:\"Change_WP_Admin_Login\";i:1;s:9:\"uninstall\";}s:27:\"redirection\/redirection.php\";a:2:{i:0;s:17:\"Redirection_Admin\";i:1;s:16:\"plugin_uninstall\";}}",
     "upload_path": "",
     "upload_url_path": "",
     "uploads_use_yearmonth_folders": "1",
