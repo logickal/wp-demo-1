@@ -31,6 +31,7 @@ $upstreamRepoWithCredentials = str_replace('git@github.com:', 'https://github.co
 $branch = 'master';
 
 $commitToSubmit = exec("git -C $fullRepository rev-parse HEAD");
+print "Commit to submit is $commitToSubmit.\n";
 $targetBranch = $branch;
 
 print "::::::::::::::::: Info :::::::::::::::::\n";
