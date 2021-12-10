@@ -105,7 +105,7 @@ $workbranch = "recommit-work";
     //file_put_contents("$fullRepository/.gitignore", $gitignore_contents);
 
     //print "::::::::::::::::: .gitignore :::::::::::::::::\n$gitignore_contents\n";
-
+    $fromSha = exec("git --git-dir=$canonicalRepository/.git --work-tree=$canonicalRepository rev-parse HEAD");
     // Git diff
     passthru("git --git-dir=$canonicalRepository/.git --work-tree=$canonicalRepository diff --name-only $fromSha $commitToSubmit");
     // Add our files and make our commit
