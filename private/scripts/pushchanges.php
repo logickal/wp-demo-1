@@ -106,6 +106,8 @@ $workbranch = "recommit-work";
 
     //print "::::::::::::::::: .gitignore :::::::::::::::::\n$gitignore_contents\n";
 
+    // Git diff
+    passthru("git --git-dir=$canonicalRepository/.git --work-tree=$canonicalRepository diff --name-only $fromSha $commitToSubmit");
     // Add our files and make our commit
     print "git add .\n";
     passthru("git --git-dir=$canonicalRepository/.git -C $fullRepository add .", $status);
